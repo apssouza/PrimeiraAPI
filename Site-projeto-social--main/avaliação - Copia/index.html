@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Avaliação </title>
+</head>
+<body>
+    <header>
+        <nav class="nav1">
+            <a class="logo" name="MBA"> MBA</a>
+            <ul class="list">
+                <li> <a href="#home"> Início </a></li>
+                <li> <a href="#acao"> Ações </a> </li>
+                <li> <a href="#contato"> Fale Conosco </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- CAIXA DE PESQUISA -->
+        <a name="home"></a>
+        <nav class="nav2">
+            <h1> <b> Seja Bem Vindo </b></h1>
+            <input type="text" name="search" id="search">
+            <button class="button" type="submit" onclick="click"> Buscar </button>
+        </nav>
+        <!-- IMAGENS -->
+        <section class="slide">
+            <a name="acao"></a>
+            <h2> ::::::::::::::::::::::::: Ações :::::::::::::::::::::::::</h2>
+            <div class="fotos">
+                <a href=""> <img id="1" src="_img/1.jpg" alt=""></a>
+                <a href=""> <img id="2" src="_img/2.jpg" alt=""> </a>
+                <a href=""> <img id="3" src="_img/3.jpg" alt=""> </a>
+                <a href=""> <img id="4" src="_img/4.jpg" alt=""> </a>
+                <a href=""> <img id="5" src="_img/5.jpg" alt=""> </a>
+                <a href=""> <img id="6" src="_img/6.jpg" alt=""> </a>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="card">
+                <h2 id="titulo">::::::: Login :::::::</h2>
+                
+                <div class="label">
+                    <label for="userLabel"> Usuário </label>
+                    <input type="text" id="user" paceholder="">
+                </div>
+
+                <div class="label">
+                    <label for="senhaLabel"> Senha </label>
+                    <input type="password" id="senha" paceholder="">
+                </div>
+
+                <div class="justify-center"> 
+                    <button id="btn" onclick="entrar()"> <strong> Entrar </strong></button> 
+                </div>
+                
+                <p><a id="cadastro" href="cadastro.html"> Cadastre-se aqui </a></p>
+            </div>
+        </div>
+
+        <footer class="rodape">
+            <section >
+                <nav>
+                    <ul class="ul1">
+                        <li> Formas de contato </li>
+                        <li><a href="#">bememacao@gmail.com</a></li>
+                        <li><a href="#">(75)98161-5650</a></li>
+                        <li><a href="#MBA">Voltar para o topo da página</a></li>
+                    </ul>
+                </nav>
+                <small> <center>Site desenvolvido por Ana Paula</center></small>
+                <small> <center>Copyright © 2022</center> </small>
+            </section>
+        </footer>
+    </main>
+        
+    <script src="script.js"> </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+@media screen {
+        
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        /* vh é uma unidade responsiva que se adapta a altura de tela do usuário */
+        height: 9vh;
+        background-color:rgba(150, 226, 216, 1);
+    }
+
+    a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        /* transition é o tempo de transição do efeito da opacidade */
+        transition: 0.4s;
+    }
+
+    /* hover permite criar efeitos */
+    a:hover{
+        opacity: 0.6;
+    }
+
+    .logo{
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .nav1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 8vh;
+    }
+
+    .list{
+        font-size: 20px;
+        letter-spacing: 2px;
+        list-style-type: none;
+        display: flex;
+    }
+
+    li{
+        margin-left: 5vh;
+        list-style-type: none;
+    }
+
+    body{
+        background-image: url(_img/Backgroud\ -\ Copia.jpg );
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: rgba(150, 226, 216, 1);
+        font-family: 'Butterfly Kids', cursive;
+        width: 205vh;
+    }
+
+    h1{
+        color: rgb(255, 255, 255);
+        font-size: 65px;
+    }
+
+    main{
+        height: 675px;
+        margin: 0px 100px;
+    }
+
+    .nav2{
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 30vh;
+    }
+
+    #search{
+        width: 55vh;
+        height: 9vh;
+        border-radius: 5px;
+        border-color: rgba(241, 207, 56, 1);
+    }
+
+    .button{
+        margin-top: 35px;
+        width: 25vh;
+        height: 9.5vh;
+        border-radius: 5px;
+        color: white;
+        font-size: large;
+        border-color: rgba(0, 0, 0, 0);
+        background-color: rgba(241, 207, 56, 1);
+    }
+
+    section{
+        margin-top: 78vh;
+        width: 190vh;
+        height: 30%;
+        position: flex;
+    }
+
+    h2{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        text-shadow: 4px 3px 0px rgba(237, 147, 173, 1);
+    }
+
+    section img{
+        width: 55vh;
+        margin-left:30px ;
+        margin-top: 20px;
+        border-radius: 30px;
+    } 
+
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 500px;
+    
+    }
+
+    .card{
+        background-color: rgba(137, 43, 226, 0.247);
+        box-shadow: 4px 3px 1px rgba(137, 43, 226, 0.479);
+        border-radius: 40px;
+        padding: 30px;
+    }
+
+    .label input{
+        width: 100%;
+        height: 25px;
+        border-radius: 5px;
+        border-color: rgba(137, 43, 226, 0);
+        box-shadow: 2px 2px 2px rgba(137, 43, 226, 0.274);
+        background-color: rgba(255, 255, 255, 0.219);
+        outline: none;
+        font-size: 13px;
+        transition: all .2s ease-out;
+        color: rgb(137, 43, 226);
+    }
+
+    .label{
+        position: relative;
+        padding-top: 10px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        color: rgb(255, 255, 255);
+    }
+
+    #btn{
+        background-color: rgba(255, 255, 255, 0.219);
+        border-color: rgba(137, 43, 226, 0.479);
+        color: rgba(137, 43, 226, 0.747);
+        padding: 7px;
+        font-size: 14px;
+        margin-top: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.3s ease-out;
+        margin-left: 5px;
+    }
+
+    #btn:hover{
+        background-color: rgba(255, 255, 255, 0.616);
+        color: rgba(137, 43, 226, 0.85);
+    }
+
+    p{
+        margin-top: 10px;
+        color: rgba(137, 43, 226, 0.479);
+        text-align: end;
+    }
+
+    footer{
+        height: 9vh;
+        background-color:rgba(86, 124, 119, 0.507);
+        margin-top: 0px;
+    }
+
+    .rodape{
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.226);
+        display: block ;
+        height: 20vh;
+    }
+
+    ul1{
+        display: flex;
+        justify-content: space-around;
+        align-items: left;
+        height: 8vh;
+    }
+
+    small{
+        padding: 0;
+    }
+
+}
