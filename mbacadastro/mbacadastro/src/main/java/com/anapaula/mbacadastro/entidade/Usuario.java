@@ -14,7 +14,7 @@ public class Usuario {
     private int id;
     private String nome;
     private String senha;
-    private String user;
+    private String usuario;
     private String email;
     public int getId() {
       return id;
@@ -35,10 +35,10 @@ public class Usuario {
       this.senha = senha;
     }
     public String getUser() {
-      return user;
+      return usuario;
     }
-    public void setUser(String user) {
-      this.user = user;
+    public void setUser(String usuario) {
+      this.usuario = usuario;
     }
     public String getEmail() {
       return email;
