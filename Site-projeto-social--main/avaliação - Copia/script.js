@@ -13,27 +13,41 @@ function entrar(){
 }
 console.log(login)
 
-let cadastro = []
+
+// nome
+let nome = document.getElementById('nome')
+
+// usuario
+let usuario = document.getElementById('user')
+
+// email
+let email = document.getElementById('email')
+
+// senha
+let senha = document.getElementById('senha')
+
+// confirme a senha
+let confirmSenha = document.getElementById('confirmSenha')
+
+
 function cadastrar(){
-    // nome
-    let nome = document.getElementById('nome').value
+    // metodo que vai enviar os dados e acessar nossa api
+    fetch("http://localhost:8098/cadastrar", //enpoint de acesso 
+    {       // cabeçalho dizendo que vou enviar o tipo json
+        method:'POST',
+        headers:{
+            'Accept' : 'application/json',
+            'Content-Type' : 'application/json'
+        },
 
-    // usuario
-    let user = document.getElementById('user').value
+        body: JSON.stringify({
+            nome : nome.value,
+            usuario : usuario.value,
+            email : email.value,
+            senha : senha.value
+        }) //conversor para json
+    })
+    .then(function(res) {console.log(res)})
+    .catch(function(res) {console.log(res)})
 
-    // senha
-    let senha = document.getElementById('senha').value
-
-    // confirme a senha
-    let confirmSenha = document.getElementById('confirmSenha').value
-
-    let dados = {
-        nome: nome,
-        usuario: user,
-        senha: senha,
-        confirmacao: confirmSenha
-    }
-    cadastro.push(dados)
 }
-
-console.log(cadastro)

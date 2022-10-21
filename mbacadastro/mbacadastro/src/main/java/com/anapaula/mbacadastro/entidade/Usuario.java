@@ -28,16 +28,16 @@ public class Usuario {
     public void setNome(String nome) {
       this.nome = nome;
     }
-    public String getSenha() {
+    public String getSenha(String string) {
       return senha;
     }
     public void setSenha(String senha) {
       this.senha = senha;
     }
-    public String getUser() {
+    public String getUsuario() {
       return usuario;
     }
-    public void setUser(String usuario) {
+    public void setUsuario(String usuario) {
       this.usuario = usuario;
     }
     public String getEmail() {
@@ -45,6 +45,9 @@ public class Usuario {
     }
     public void setEmail(String email) {
       this.email = email;
+    }
+    public String getSenha() {
+        return senha;
     }
 
 }
